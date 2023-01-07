@@ -17,7 +17,7 @@ class CreateMoviesTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->text('summary');
-            $table->string('cover_photo');
+            $table->string('cover_photo')->nullable();
             $table->integer('user_id');
             $table->integer('genre_id');
             $table->integer('author_id');
